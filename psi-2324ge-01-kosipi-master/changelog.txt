@@ -1,0 +1,41 @@
+Terdapat dua folder yaitu Folder UI dan Apps
+Pada Folder UI, ditampilkan code untuk User Interfacenya
+Pada Folder Apps, terdapat fungsi-fungsi untuk website.
+Fitur-fitur yang telah ada yaitu :
+1. Simpanan
+2. Pinjaman
+3. Event
+4. Pengaturan
+
+Dan masih perlu banyak modifikasi untuk memperbaikinya.
+Pada User dengan role admin, dapat menambahkan event.
+Pada User dengan role bendahara, dapat menambahkan anggota, pinjaman, simpanan.
+Pada User dengan role anggota, dapat melihat history pinjaman dan simpanan.
+
+Langkah-Langkah untuk Clone :
+1. Lakukan clone didalam folder yang diinginkan.
+2. Buka didalam Visual Studio Code
+3. Lakukan Perintah : 
+cd apps
+cp .env.example .env //Untuk mengcopy .env.example dan membuatnya menjadi .env
+4. Sesuaikan nama database dengan database yang diinginkan
+5. Lakukan Perintah :
+php artisan key:generate //Untuk membuat Key
+php artisan storage:link //Untuk membuat Folder Storage
+php artisan migrate --seed //Untuk membuat tabel dan memasukkan data
+
+Akun admin:
+Username : admin
+Password : password
+
+Akun bendahara:
+Username : bendahara
+Password : password
+
+Akun anggota:
+Username : anggota
+Password : password
+
+Untuk akun anggota bawaan atau pada seeder
+tidak dapat melakukan simpanan karena tidak memiliki membership_number
+sehingga jika ingin melihat apakah fitur simpanan dapat dilakukan, perlu ditambahkan terdahulu akun anggota.

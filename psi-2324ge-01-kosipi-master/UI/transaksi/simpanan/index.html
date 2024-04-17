@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>Tambah Simpanan</title>
+</head>
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+            <!-- <i class='bx bxs-smile icon'></i> AdminSite -->
+            <img class="icon-logo" src="../../Logo.png" alt="">
+            <img class="icon-text" src="../../namaweb.png" alt="">
+        </a>
+		<ul class="side-menu">
+			<li><a href="#"><i class='bx bx-home icon'></i> Dashboard</a></li>
+            <li><a href="#"><i class='bx bxs-user icon'></i> Pengurus</a></li>
+			<li><a href="#"><i class='bx bx-user icon'></i> Anggota</a></li>
+			<li>
+				<a href="#"><i class='bx bx-money icon'></i> Transaksi <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#"><i class='bx bxs-circle icon'></i>Simpanan</a></li>
+					<li><a href="#"><i class='bx bxs-circle icon'></i>Pinjaman</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+			</form>
+
+			<!-- <span class="divider"></span> -->
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profil</a></li>
+					<li><a href="#"><i class='bx bxs-cog icon' ></i> Pengaturan</a></li>
+					<li><a href="#"><i class='bx bx-calendar-event icon' ></i> Acara</a></li>
+                    <li><a href="#"><i class='bx bx-log-out icon' ></i> Keluar</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<ul class="breadcrumbs">
+				<li><a href="#" class="active"><i class='bx bx-money icon'></i> Transaksi/ <a href="">Simpanan/</a><a href="">Tambah Simpanan</a></a></li>
+			</ul>
+			<div class="info-data">
+				<div class="card">
+					<h2>Tambah Simpanan</h2>
+					<div class="container">
+						<form>
+                            <div class="form-group">
+                                <label for="tanggal"><strong>Tanggal</strong></label>
+                                <br>
+                                <input type="date" id="tanggal" name="tanggal" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nama_anggota"><strong>Nama Anggota</strong></label>
+                                <br>
+                                <input type="text" id="nama_anggota" name="nama_anggota" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="jenis_simpanan"><strong>Jenis Simpanan</strong></label>
+                                <br>
+                                <select id="jenis_simpanan" name="jenis_simpanan" required>
+                                    <option value="" disabled selected>Pilih jenis simpanan</option>
+                                    <option value="Simpanan Pokok">Simpanan Pokok</option>
+                                    <option value="Simpanan Wajib">Simpanan Wajib</option>
+                                    <option value="Simpanan Sukarela">Simpanan Sukarela</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nominal"><strong>Nominal</strong></label>
+                                <br>
+                                <input type="number" id="nominal" name="nominal" required>
+                            </div>
+                            
+						</form>
+					</div>
+
+					<button class="tambah-transaksi">Tambahkan</button>
+                    <button class="batal-transaksi">Batal</button>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
+</body>
+</html>
